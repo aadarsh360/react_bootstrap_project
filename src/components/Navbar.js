@@ -1,4 +1,5 @@
 import React from 'react'
+import ServiceFunctionality from './navbar_functionality/ServiceFunctionality'
 
 function Navbar() {
   return (
@@ -33,7 +34,7 @@ function Navbar() {
           <ul className="navbar-nav mx-auto  w-50 justify-content-center">
             <li className="nav-item">
               <a className="nav-link text-dark mx-2" href="#home">
-                Home
+                <ServiceFunctionality />
               </a>
             </li>
             <li className="nav-item">
