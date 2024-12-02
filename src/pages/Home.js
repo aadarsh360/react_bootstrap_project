@@ -1,469 +1,12 @@
 
-// import React, { useState } from "react";
-
-// function App() {
-//   const [show, setShow] = useState(false);
-//   const [selectedItem, setSelectedItem] = useState(null);
-
-//   // Data for items and corresponding messages
-//   const items = [
-//     { id: 1, name: "Item 1", message: "This is the message for Item 1!" },
-//     { id: 2, name: "Item 2", message: "Here is some information for Item 2." },
-//     { id: 3, name: "Item 3", message: "Item 3 has its own unique message." },
-//     { id: 4, name: "Item 4", message: "You selected Item 4. Cool stuff!" },
-//   ];
-
-//   return (
-//     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
-//       {/* Hoverable Text */}
-//       <div
-//         className="position-relative"
-//         onMouseEnter={() => setShow(true)}
-//         onMouseLeave={() => setShow(false)}
-//         style={{ display: "inline-block" }}
-//       >
-//         {/* Hover Text */}
-//         <span
-//           className="text-primary fw-bold"
-//           style={{
-//             cursor: "pointer",
-//             fontSize: "18px",
-//           }}
-//         >
-//           Hover over this text
-//         </span>
-
-//         {/* Message Box */}
-//         {show && (
-//           <div
-//             className="position-absolute"
-//             style={{
-//               top: "100%", // Position below the text
-//               left: "50%", // Center the box relative to text
-//               transform: "translateX(-50%)", // Align it without shifting
-//               marginTop: "2px", // Gap between text and box
-//               zIndex: 1000,
-//             }}
-//           >
-//             {/* Arrow */}
-//             <div
-//               style={{
-//                 width: "0",
-//                 height: "0",
-//                 borderLeft: "10px solid transparent",
-//                 borderRight: "10px solid transparent",
-//                 borderBottom: "10px solid #6C63FF", // Match message box color
-//                 margin: "0 auto",
-//               }}
-//             ></div>
-
-//             {/* Message Content */}
-//             <div className=""
-//               style={{
-//                 background: "linear-gradient(60deg, #0066ff, #8e44ad)", // Blue to Purple Gradient
-//                 color: "#FFFFFF",
-//                 display: "flex", // Flexbox for dividing into left and right
-//                 padding: "15px",
-//                 borderRadius: "10px",
-//                 boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-//                 minWidth: "500px", // Ensure enough width
-//                 border: "1px solid #A29BFE",
-//               }}
-//             >
-//               {/* Left Side: 1 Column, Multiple Rows */}
-//               <div
-//                 style={{
-//                   flex: "1",
-//                   borderRight: "1px solid #A29BFE",
-//                   paddingRight: "10px",
-//                   textAlign: "center",
-//                 }}
-//               >
-//                 {items.map((item) => (
-//                   <p
-//                     key={item.id}
-//                     className="mb-1"
-//                     style={{
-//                       cursor: "pointer",
-//                       fontWeight: selectedItem === item.id ? "bold" : "normal",
-//                       color: selectedItem === item.id ? "#fff" : "#ccc",
-//                       border: "2px solid transparent", // Default border (no color)
-//                       padding: "10px",
-//                       borderRadius: "5px",
-//                       transition: "all 0.3s ease", // Smooth transition for border color
-//                     }}
-//                     onMouseEnter={() => setSelectedItem(item.id)}
-//                     onMouseLeave={() => setSelectedItem(null)}
-//                     // Adding gradient border on hover
-//                     onMouseOver={(e) => {
-//                       e.target.style.border = "2px solid #0066ff"; // Blue border
-//                     }}
-//                     onMouseOut={(e) => {
-//                       e.target.style.border = "2px solid transparent"; // Reset border
-//                     }}
-//                   >
-//                     {item.name}
-//                   </p>
-//                 ))}
-//               </div>
-
-//               {/* Right Side: Dynamic Message */}
-//               <div
-//                 style={{
-//                   flex: "2",
-//                   paddingLeft: "10px",
-//                   opacity: selectedItem ? 1 : 0, // Control visibility with opacity
-//                   transition: "opacity 0.3s ease-in-out", // Smooth transition for opacity
-//                 }}
-//               >
-//                 <h6 className="mb-2">{selectedItem ? "Selected Item Details" : "Hover an Item"}</h6>
-//                 <p className="mb-0">
-//                   {selectedItem
-//                     ? items.find((item) => item.id === selectedItem).message
-//                     : "Hover over an item on the left to see its message."}
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-// import React, { useState } from "react";
-
-// function App() {
-//   const [show, setShow] = useState(false);
-//   const [selectedItem, setSelectedItem] = useState(null);
-
-//   // Data for items and corresponding messages
-//   const items = [
-//     { id: 1, name: "Item 1", message: "This is the message for Item 1!" },
-//     { id: 2, name: "Item 2", message: "Here is some information for Item 2." },
-//     { id: 3, name: "Item 3", message: "Item 3 has its own unique message." },
-//     { id: 4, name: "Item 4", message: "You selected Item 4. Cool stuff!" },
-//   ];
-
-//   return (
-//     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
-//       {/* Hoverable Text */}
-//       <div
-//         className="position-relative"
-//         onMouseEnter={() => setShow(true)}
-//         onMouseLeave={() => setShow(false)}
-//         style={{ display: "inline-block" }}
-//       >
-//         {/* Hover Text */}
-//         <span
-//           className=".text-primary text-danger fw-bold"
-//           style={{
-//             cursor: "pointer",
-//             fontSize: "18px",
-//           }}
-//         >
-//           Hover over this text
-//         </span>
-
-//         {/* Message Box */}
-//         {show && (
-//           <div
-//             className="position-absolute"
-//             style={{
-//               top: "100%", // Position below the text
-//               left: "50%", // Center the box relative to text
-//               transform: "translateX(0%)", // Align it without shifting
-//               marginTop: "10px", // Gap between text and box
-//               zIndex: 1000,
-//             }}
-//           >
-//             {/* Arrow */}
-//             <div
-//               style={{
-//                 width: "0",
-//                 height: "0",
-//                 borderLeft: "10px solid transparent",
-//                 borderRight: "10px solid transparent",
-//                 borderBottom: "10px solid #6C63FF", // Match message box color
-//                 margin: "0 auto",
-//               }}
-//             ></div>
-
-//             {/* Message Content */}
-//             <div
-//               style={{
-//                 backgroundColor: "#6C63FF",
-//                 color: "#FFFFFF",
-//                 display: "flex", // Flexbox for dividing into left and right
-//                 padding: "15px",
-//                 borderRadius: "10px",
-//                 boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-//                 minWidth: "500px", // Ensure enough width
-//                 border: "1px solid #A29BFE",
-//               }}
-//             >
-//               {/* Left Side: 1 Column, Multiple Rows */}
-//               <div
-//                 style={{
-//                   flex: "1",
-//                   borderRight: "1px solid #A29BFE",
-//                   paddingRight: "10px",
-//                   textAlign: "center",
-//                 }}
-//               >
-//                 {items.map((item) => (
-//                   <p
-//                     key={item.id}
-//                     className="mb-1"
-//                     style={{
-//                       cursor: "pointer",
-//                       fontWeight: selectedItem === item.id ? "bold" : "normal",
-//                       color: selectedItem === item.id ? "#fff" : "#ccc",
-//                     }}
-//                     onMouseEnter={() => setSelectedItem(item.id)}
-//                     onMouseLeave={() => setSelectedItem(null)}
-//                   >
-//                     {item.name}
-//                   </p>
-//                 ))}
-//               </div>
-
-//               {/* Right Side: Dynamic Message */}
-//               <div
-//                 style={{
-//                   flex: "2",
-//                   paddingLeft: "10px",
-//                   opacity: selectedItem ? 1 : 0, // Control visibility with opacity
-//                   transition: "opacity 0.3s ease-in-out", // Smooth transition for opacity
-//                 }}
-//               >
-//                 <h6 className="mb-2">{selectedItem ? "Selected Item Details" : "Hover an Item"}</h6>
-//                 <p className="mb-0">
-//                   {selectedItem
-//                     ? items.find((item) => item.id === selectedItem).message
-//                     : "Hover over an item on the left to see its message."}
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-// import React, { useState } from "react";
-
-// function App() {
-//   const [show, setShow] = useState(false);
-//   const [selectedItem, setSelectedItem] = useState(null);
-
-//   // Data for items and corresponding messages
-//   const items = [
-//     { id: 1, name: "Item 1", message: "This is the message for Item 1!" },
-//     { id: 2, name: "Item 2", message: "Here is some information for Item 2." },
-//     { id: 3, name: "Item 3", message: "Item 3 has its own unique message." },
-//     { id: 4, name: "Item 4", message: "You selected Item 4. Cool stuff!" },
-//   ];
-
-//   return (
-//     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
-//       {/* Hoverable Text */}
-//       <div
-//         className="position-relative"
-//         onMouseEnter={() => setShow(true)}
-//         onMouseLeave={() => setShow(false)}
-//         style={{ display: "inline-block" }}
-//       >
-//         {/* Hover Text */}
-//         <span
-//           className="text-primary fw-bold"
-//           style={{
-//             cursor: "pointer",
-//             fontSize: "18px",
-//           }}
-//         >
-//           Hover over this text
-//         </span>
-
-//         {/* Message Box */}
-//         {show && (
-//           <div
-//             className="position-absolute"
-//             style={{
-//               top: "100%", // Position below the text
-//               left: "50%", // Center the box relative to text
-//               transform: "translateX(0%)", // Align it without shifting
-//               marginTop: "10px", // Gap between text and box
-//               zIndex: 1000,
-//             }}
-//           >
-//             {/* Arrow */}
-//             <div
-//               style={{
-//                 width: "0",
-//                 height: "0",
-//                 borderLeft: "10px solid transparent",
-//                 borderRight: "10px solid transparent",
-//                 borderBottom: "10px solid #6C63FF", // Match message box color
-//                 margin: "0 auto",
-//               }}
-//             ></div>
-
-//             {/* Message Content */}
-//             <div
-//               style={{
-//                 backgroundColor: "#6C63FF",
-//                 color: "#FFFFFF",
-//                 display: "flex", // Flexbox for dividing into left and right
-//                 padding: "15px",
-//                 borderRadius: "10px",
-//                 boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
-//                 minWidth: "300px", // Ensure enough width
-//                 border: "1px solid #A29BFE",
-//               }}
-//             >
-//               {/* Left Side: 1 Column, Multiple Rows */}
-//               <div className=""
-//                 style={{
-//                   flex: "1",
-//                   borderRight: "1px solid #A29BFE",
-//                   paddingRight: "10px",
-//                   textAlign: "center",
-//                 }}
-//               >
-//                 {items.map((item) => (
-//                   <p
-//                     key={item.id}
-//                     className="mb-1 text-primary"
-//                     style={{
-//                       cursor: "pointer",
-//                       fontWeight: selectedItem === item.id ? "bold" : "normal",
-//                       color: selectedItem === item.id ? "#fff" : "#ccc",
-//                     }}
-//                     onMouseEnter={() => setSelectedItem(item.id)}
-//                     onMouseLeave={() => setSelectedItem(null)}
-//                   >
-//                     {item.name}
-//                   </p>
-//                 ))}
-//               </div>
-
-//               {/* Right Side: Dynamic Message */}
-//               <div
-//                 style={{
-//                   flex: "2",
-//                   paddingLeft: "10px",
-//                 }}
-//               >
-//                 <h6 className="mb-2">{selectedItem ? "Selected Item Details" : "Hover an Item"}</h6>
-//                 <p className="mb-0">
-//                   {selectedItem
-//                     ? items.find((item) => item.id === selectedItem)
-//                       ? items.find((item) => item.id === selectedItem).message
-//                       : "No message available"
-//                     : "Hover over an item on the left to see its message."}
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
-
-
-// import React, { useState } from "react";
-
-// function App() {
-//   const [show, setShow] = useState(false);
-
-//   return (
-//     <div className="d-flex justify-content-center align-items-center vh-100 bg-light">
-//       {/* Text with hover */}
-//       <div
-//         className="position-relative"
-//         onMouseEnter={() => setShow(true)}
-//         onMouseLeave={() => setShow(false)}
-//         style={{ display: "inline-block" }}
-//       >
-//         {/* Hover Text */}
-//         <span
-//           className="text-primary fw-bold"
-//           style={{
-//             cursor: "pointer",
-//             fontSize: "18px",
-//           }}
-//         >
-//           Hover over this text
-//         </span>
-
-//         {/* Message Box */}
-//         {show && (
-//           <div
-//             className="position-absolute"
-//             style={{
-//               top: "100%", // Position below the text
-//               left: "50%", // Center the box relative to text
-//               transform: "translateX(0%)", // Align center horizontally
-//               marginTop: "10px", // Gap between text and box
-//               zIndex: 1000,
-//             }}
-//           >
-//             {/* Arrow */}
-//             <div
-//               style={{
-//                 width: "0",
-//                 height: "0",
-//                 borderLeft: "10px solid transparent",
-//                 borderRight: "10px solid transparent",
-//                 borderBottom: "10px solid #6C63FF", // Match the message box color
-//                 margin: "0 auto", // Center the arrow
-//               }}
-//             ></div>
-
-//             {/* Message Content */}
-//             <div
-//               style={{
-//                 backgroundColor: "#6C63FF", // Beautiful purple background
-//                 color: "#FFFFFF", // White text for readability
-//                 padding: "10px 15px", // Add internal padding
-//                 borderRadius: "10px", // Rounded corners
-//                 boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)", // Soft shadow
-//                 textAlign: "center",
-//                 fontSize: "14px", // Clean font size
-//                 border: "1px solid #A29BFE", // Subtle border for style
-//               }}
-//             >
-//               ✨ This is a beautiful message box with an arrow! 🌟
-//             </div>
-//           </div>
-//         )}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import HorizontalMove from '../components/HorizontalMove'
 import Nitty_Gritty from '../components/Nitty_Gritty'
+import WeOpenSource from '../components/WeOpenSource'
+
 
 
 function Home() {
@@ -644,6 +187,317 @@ function Home() {
       </div>
 
       <Nitty_Gritty />
+
+      <WeOpenSource />
+
+      <div className=" top-to-bottom-color">
+        <div className=" container p-4 text-center mt-3 mb-3">
+          <div className=" mt-5 mb-5">
+            {/* Heading */}
+            <h2 className="mb-3 fw-bold">Looking for GPU Cloud Consulting partner?</h2>
+
+            {/* Paragraph */}
+            <p className="mb-4 text-gray">
+              Get expert guidance from our GPU Cloud consultants for building and managing<br></br>
+              GPU cloud solutions and robust AI infrastructure.
+
+
+            </p>
+
+            {/* Button */}
+            <button className="btn mt-3 p-2 px-4 bg-orange">Talk to GPU Cloud Expert</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div className=" bg-light-white">
+        <div className=" container mt-5 mb-5">
+
+          <div className=" text-center mt-5">
+            <h2 className="mb-3 fw-bold">Why Choose InfraCloud AI Platform for Building your AI Cloud?</h2>
+          </div>
+
+          <div className=" p-3 mt-3 mb-3">
+            {/* Row 1 */}
+            <div className="row">
+              {/* Col 1 */}
+              <div className="col  p-3">
+                {/* Image */}
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Example"
+                  className="img-fluid mb-3 rounded-3"
+                />
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">Certified Developers</h5>
+
+                {/* Paragraph */}
+                <p className="text-gray">
+                  170 in-house engineers, including 4 CKS, 51 CKA, 19 Certified Kubernetes Application Developers & 2 Kubestronauts.
+                </p>
+              </div>
+
+              {/* Col 2 */}
+              <div className="col p-3">
+                {/* Image */}
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Example"
+                  className="img-fluid mb-3 rounded-3"
+                />
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">Domain Expertise</h5>
+
+                {/* Paragraph */}
+                <p className="text-gray">
+                  Implement the AI cloud best practices that we have learned while working with 100+ clients.</p>
+              </div>
+
+              {/* Col 3 */}
+              <div className="col  p-3">
+                {/* Image */}
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Example"
+                  className="img-fluid mb-3 rounded-3"
+                />
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">First Mover Advantage</h5>
+
+                {/* Paragraph */}
+                <p className="text-gray">
+                  Partner with the first Kubernetes service provider in India and second in APAC.</p>
+              </div>
+
+            </div>
+
+            {/* Row 2 */}
+            <div className="row">
+              {/* Col 1 */}
+              <div className="col p-3">
+                {/* Image */}
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Example"
+                  className="img-fluid mb-3 rounded-3"
+                />
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">Training</h5>
+
+                {/* Paragraph */}
+                <p className="text-gray">
+                  Our AI training focuses on building knowledge of core AI concepts with practical experiences.</p>
+              </div>
+
+              {/* Col 2 */}
+              <div className="col p-3">
+                {/* Image */}
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Example"
+                  className="img-fluid mb-3 rounded-3"
+                />
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">CNCF Certified Provider</h5>
+
+                {/* Paragraph */}
+                <p className="text-gray">
+                  InfraCloud is a proud CNCF Silver Member, and Kubernetes Certified Service Provider (KCSP).</p>
+              </div>
+
+              {/* Col 3 */}
+              <div className="col  p-3">
+                {/* Image */}
+                <img
+                  src="https://via.placeholder.com/40"
+                  alt="Example"
+                  className="img-fluid mb-3 rounded-3"
+                />
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">Expand Easily</h5>
+
+                {/* Paragraph */}
+                <p className="text-gray">
+                  Easily scale up the team of expert AI engineers & developers without the hassle of hiring or training.</p>
+              </div>
+
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      {/* Swipper Container */}
+      <div className="top-to-bottom-color">
+        <div className="container r mt-5">
+          <div className="s text-center">
+            <h3 className="fw-bold">Team with Diverse Set of AI Cloud Expertise</h3>
+            <p className="text-gray">Top-tier consulting for building AI and GPU cloud. Bespoke solutions for enhanced AI performance.</p>
+          </div>
+
+
+          {/* Swipper */}
+          <div id="carouselExampleSlidesOnly" className="carousel slide border border-primary" data-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active" style={{width:"200px"}}>
+                <img src="https://picsum.photos/100" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item" style={{width:"200px"}}>
+                <img src="https://picsum.photos/150" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item" style={{width:"200px"}}>
+                <img src="https://picsum.photos/200" className="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+      </div>
+
+
+      <div className="">
+        <div className=" container mt-3">
+
+          <div className=" text-center">
+            <h3 className="fw-bold py-2">Evangelizing AI Cloud</h3>
+          </div>
+
+          <div className="row  p-3 d-flex justify-content-evenly mt-5 ">
+
+            {/* Child Div 1 */}
+            <div className=" col-3 hover-effect hover-shadow">
+              {/* Image */}
+              <div >
+                <img
+                  src="https://www.infracloud.io/assets/img/blog/gpu-sharing-techniques-guide/vgpu-vs-mig-vs-gpu-time-slicing-1200x628.png"
+                  alt="Example Image"
+                  className="img-fluid mb-3"
+                />
+              </div>
+
+              <div className="position-relative mt-3 py-3">
+                <span className="fs-6 position-absolute bottom-100 px-4 py-2 rounded" style={{
+                  backgroundColor: "lavender",
+                  color: "blue"
+                }}>Blog</span>
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">Guide to GPU Sharing Techniques: vGPU, MIG and Time Slicing</h5>
+              </div>
+
+            </div>
+
+            {/* Child Div 2 */}
+            <div className=" col-3 hover-effect hover-shadow">
+              {/* Image */}
+              <div >
+                <img
+                  src="https://www.infracloud.io/assets/img/blog/artifact-hub-ai.png"
+                  alt="Example Image"
+                  className="img-fluid mb-3"
+                />
+              </div>
+
+              <div className="position-relative mt-3 py-3">
+                <span className="fs-6 position-absolute bottom-100 px-4 py-2 rounded" style={{
+                  backgroundColor: "lavender",
+                  color: "blue"
+                }}>Open Source Helm Charts</span>
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">Host LLM Models Locally on K8s Clusters & Build AI Apps Faster</h5>
+              </div>
+
+            </div>
+
+            {/* Child Div 3 */}
+            <div className=" col-3 hover-effect hover-shadow">
+              {/* Image */}
+              <div >
+                <img
+                  src="https://www.infracloud.io/assets/img/webinars/ai-webinar-thumbnail.png"
+                  alt="Example Image"
+                  className="img-fluid mb-3"
+                />
+              </div>
+
+              <div className="position-relative mt-3 py-3">
+                <span className="fs-6 position-absolute bottom-100 px-4 py-2 rounded" style={{
+                  backgroundColor: "lavender",
+                  color: "blue"
+                }}>Webinar</span>
+
+                {/* Heading */}
+                <h5 className="mb-2 fw-bold">How We Built Our AI Lab: A Practical Walkthrough</h5>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      {/* above footer */}
+      <div className="bg-dark-blue">
+
+        <div className="container mt-5 p-3 text-white">
+
+          <div className=" p-3 mb-3 text-center">
+            <h2 className="fw-bold">Ready to Transform & Build your AI Cloud?</h2>
+            <p className="fs-6">Elevate your organization’s AI and GPU cloud capabilities with tailored consulting and management services.</p>
+          </div>
+
+
+          <div className="p-3 d-flex justify-content-around">
+            {/* First Inner Div */}
+            <div className=" p-2 mb-3 text-center">
+              {/* Paragraph */}
+              <p>Trusted by 100+ companies worldwide</p>
+
+              {/* Horizontal Line */}
+              <hr className="my-2" />
+
+              <div style={{ width: "500px" }}>
+                {/* Image */}
+                <img
+                  src="https://www.infracloud.io/assets/img/customers/calendly-section-all-customer-logos.svg"
+                  alt="Example"
+                  className="img-fluid mt-2"
+                />
+              </div>
+            </div>
+
+            {/* Second Inner Div */}
+            <div className=" p-2 mb-3">
+              <h5>Calender Calender Calender Calender Calender</h5>
+              <img
+                src="https://www.infracloud.io/assets/img/customers/calendly-section-all-customer-logos.svg"
+                alt="Example"
+                className="img-fluid mt-2"
+              />
+            </div>
+          </div>
+        </div>
+
+      </div>
 
       <Footer />
 

@@ -2,8 +2,9 @@ import React from 'react'
 
 function Nitty_Gritty() {
     return (
-        <div className="container ">
-            <div className="row mt-5  d-flex justify-content-between">
+        <div className="top-to-bottom-color">
+        <div className="container  ">
+            <div className="row mt-5 mb-5  d-flex justify-content-around">
                 {/* Left Div */}
                 <div className="col-3  p-3">
                     <h2 className="fw-bold">We Understand the
@@ -104,6 +105,8 @@ function Nitty_Gritty() {
                 </div>
 
             </div>
+        </div>
+
         </div>
     )
 }
