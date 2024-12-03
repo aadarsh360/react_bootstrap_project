@@ -5,7 +5,7 @@ function HorizontalMove() {
         <div className="">
             <div className=" container p-3 ">
 
-                <h3 className="mb-4 text-center">Trusted by leading companies</h3>
+                <h3 className="mb-4 fs-4 text-center">Trusted by leading companies</h3>
                 <div className="row">
                     {/* Image 1 */}
                     <div className="col-2 mb-3">

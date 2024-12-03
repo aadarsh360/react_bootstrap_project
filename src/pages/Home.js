@@ -352,13 +352,13 @@ function Home() {
           <div id="carouselExampleSlidesOnly" className="carousel slide border border-primary" data-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active" style={{width:"200px"}}>
-                <img src="https://picsum.photos/100" className="d-block w-100" alt="..." />
+                <img src="https://picsum.photos/100" className="d-block w-100" alt="Image1" />
               </div>
               <div className="carousel-item" style={{width:"200px"}}>
-                <img src="https://picsum.photos/150" className="d-block w-100" alt="..." />
+                <img src="https://picsum.photos/150" className="d-block w-100" alt="Image2" />
               </div>
               <div className="carousel-item" style={{width:"200px"}}>
-                <img src="https://picsum.photos/200" className="d-block w-100" alt="..." />
+                <img src="https://picsum.photos/200" className="d-block w-100" alt="Image3" />
               </div>
             </div>
           </div>
