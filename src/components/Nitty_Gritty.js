@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nitty_Gritty() {
     return (
-        <div className="top-to-bottom-color">
+        <div className="top-to-bottom-color p-4">
         <div className="container  ">
             <div className="row mt-5 mb-5  d-flex justify-content-around">
                 {/* Left Div */}

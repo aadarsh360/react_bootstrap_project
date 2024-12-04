@@ -2,7 +2,7 @@ import React from 'react'
 
 function WeOpenSource() {
     return (
-        <div className=" top-to-bottom-color">
+        <div className=" top-to-bottom-color p-4">
             <div className="container  p-3 mt-5 mb-5">
                 <div className="row d-flex justify-content-evenly">
                     {/* Left Div */}

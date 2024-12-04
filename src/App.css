@@ -72,6 +72,12 @@
   background: linear-gradient(to bottom, #ebf1f5, #ffffff);
   
 }
+.bg-light-green{
+  background: #ebf1f5
+}
+.bg-white{
+  background: #ffffff
+}
 
 .scrolling-image {
   position: relative;
@@ -112,3 +118,45 @@
 .bg-red{
   background:#000;
 }
+
+.parallelogram {
+  transform: skew(-20deg);
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid black;
+  position: relative;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  border: 0px solid #ff5733; /* Example border color */
+}
+
+.box-shadow{
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+
+.parallelogram div{
+  transform: skew(20deg); /* Neutralize skew for text */
+  margin: 0;
+   /* Text color */
+}
+
+
+
+
+/* navbar start */
+.brandLogo {
+  font-size: 35px;
+  font-family: monospace;
+}
+.fontBold {
+  font-weight: 500;
+}
+.fontSize18 {
+  font-size: 18px;
+}
+.navActive {
+  border-bottom: 2px solid black;
+  color: black !important;
+}
+
+/* navbar end */

@@ -28,7 +28,7 @@ function Footer() {
                                 </p>
 
                                 {/* Links with Icons */}
-                                <ul className="list-unstyled d-flex">
+                                <ul className="list-unstyled d-flex flex-wrap">
                                     <li className="mb-2">
                                         <a href="#facebook" className="text-decoration-none">
                                             <img
@@ -94,61 +94,62 @@ function Footer() {
                             </div>
 
 
-                            {/* Column 1 */}
-                            <div className="col-12 col-md-9  py-5 justify-content-center align-items-center  flex-wrap">
-                                <div className="d-flex row justify-content-center align-items-center flex-wrap">
-                                    {/* Image 1 */}
+                            {/* Column 2 */}
 
-                                    <div className="col-6  flex-wrap ">
+                            <div className="col-md-9 col-12  mx-0 my-auto p-0 row">
+                                <div className="row col-md-6 col-12">
+                                    <div className="col-md-6 col-12  p-3 my-auto">
                                         <img
                                             src="https://www.infracloud.io/assets/img/generic/glassdoor-rating.svg"
                                             alt="Sample 1"
-                                            className="px-4"
-                                            style={{ width: "210px", height: "auto" }}
-                                        />
-                                        {/* Image 2 */}
-                                        <img
-                                            src="https://www.infracloud.io/assets/img/generic/cncf-stacked-color.svg"
-                                            alt="Sample 2"
-                                            className="px-4"
-                                            style={{ width: "210px", height: "auto" }}
+                                            className="img-fluid"
                                         />
                                     </div>
 
-                                    <div className="col-6 d-flex ">
-                                        {/* Image 3 */}
+                                    <div className="col-md-6 col-12 p-3 my-auto">
+                                        <img
+                                            src="https://www.infracloud.io/assets/img/generic/cncf-stacked-color.svg"
+                                            alt="Sample 1"
+                                            className="img-fluid"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="row col-md-6 col-12 my-auto">
+                                    <div className="col-md-3 col-6 p-4 my-auto">
                                         <img
                                             src="https://www.infracloud.io/assets/img/generic/kubernetes-kcsp-color.svg"
-                                            alt="Sample 3"
-                                            className="px-4"
-                                            style={{ width: "100px", height: "auto" }}
+                                            alt="Sample 1"
+                                            className="img-fluid"
                                         />
-                                        {/* Image 4 */}
+                                    </div>
+
+                                    <div className="col-md-3 col-6  p-4 my-auto">
                                         <img
                                             src="https://www.infracloud.io/assets/img/generic/certified-tag-2.svg"
-                                            alt="Sample 4"
-                                            className="px-4"
-                                            style={{ width: "100px", height: "auto" }}
+                                            alt="Sample 1"
+                                            className="img-fluid"
                                         />
-                                        {/* Image 5 */}
+                                    </div>
+
+                                    <div className="col-md-3 col-6  p-4 my-auto">
                                         <img
                                             src="https://www.infracloud.io/assets/img/generic/iso.svg"
-                                            alt="Sample 5"
-                                            className="px-4"
-                                            style={{ width: "100px", height: "auto" }}
+                                            alt="Sample 1"
+                                            className="img-fluid"
                                         />
-                                        {/* Image 6 */}
+                                    </div>
+
+                                    <div className="col-md-3 col-6  p-4 my-auto">
                                         <img
                                             src="https://www.infracloud.io/assets/img/generic/certified-tag.svg"
-                                            alt="Sample 6"
-                                            className="px-4"
-                                            style={{ width: "100px", height: "auto" }}
-                                        />
+                                            alt="Sample 1"
+                                            className="img-fluid"
 
+                                        />
                                     </div>
                                 </div>
                             </div>
-
 
                         </div>
                     </div>
@@ -167,7 +168,7 @@ function Footer() {
                         <div className="row">
 
                             {/* column 1 */}
-                            <div className="col  py-3 d-flex flex-column text-start">
+                            <div className="col-lg col-md-6 col-12  py-3 d-flex flex-column text-start">
                                 <h6 className="text-gray">AI Cloud</h6>
 
                                 {/* Row 1 */}
@@ -210,7 +211,7 @@ function Footer() {
 
 
                             {/* column 2 */}
-                            <div className="col  py-3 d-flex flex-column">
+                            <div className="col-lg col-md-6 col-12  py-3 d-flex flex-column">
 
                                 {/* Row 1 */}
                                 <div className="mb-5  text-start">
@@ -249,7 +250,7 @@ function Footer() {
 
 
                             {/* column 3 */}
-                            <div className="col  py-3 d-flex flex-column">
+                            <div className="col-lg col-md-6 col-12  py-3 d-flex flex-column">
 
                                 {/* Row 1 */}
                                 <div className="mb-5  text-start">
@@ -288,7 +289,7 @@ function Footer() {
 
 
                             {/* column 4 */}
-                            <div className="col  py-3 d-flex flex-column">
+                            <div className="col-lg col-md-6 col-12  py-3 d-flex flex-column">
 
                                 {/* Row 1 */}
                                 <div className="mb-5  text-start">
@@ -337,7 +338,7 @@ function Footer() {
 
 
                             {/* column 5 */}
-                            <div className="col py-3 d-flex flex-column">
+                            <div className="col-lg col-md-6 col-12 py-3 d-flex flex-column">
 
                                 {/* Row 1 */}
                                 <div className="mb-5 text-start">
@@ -387,21 +388,23 @@ function Footer() {
 
                 {/* Row 3 */}
                 <div className="">
-                    <div className=" text-center row">
+                    <div className=" text-center row flex-wrap">
 
-                        <div className="col-8  p-2 px-3 mt-3 d-flex text-gray text-center">
+                        <div className="col-8  p-2 px-3 mt-3 d-flex flex-wrap text-gray text-center ">
                             <p className="px-2">© 2024 InfraCloud - Unleash Growth!</p>
 
-                            <ul className="list-unstyled d-flex">
-                                <li><a href="#link1" className="text-decoration-none px-4 text-gray">Terms</a></li>
-                                <li><a href="#link2" className="text-decoration-none px-4 text-gray">Privacy</a></li>
-                                <li><a href="#link3" className="text-decoration-none px-4 text-gray">Equal Opportunity</a></li>
-                                <li><a href="#link4" className="text-decoration-none px-4 text-gray">Sitemap</a></li>
-                            </ul>
+                            <div className="row">
+                            {/* <ul className="list-unstyled d-flex"> */}
+                                <div className="col-sm-3 px-4"><a href="#link1" className="text-decoration-none  text-gray ">Terms</a></div>
+                                <div className="col-sm-3 px-4"><a href="#link2" className="text-decoration-none text-gray">Privacy</a></div>
+                                <div className="col-sm-3 px-4"><a href="#link3" className="text-decoration-none  text-gray">Equal Opportunity</a></div>
+                                <div className="col-sm-3 px-4"><a href="#link4" className="text-decoration-none  text-gray">Sitemap</a></div>
+                            {/* </ul> */}
+                            </div>
                         </div>
 
                         {/* Inner Div 2 */}
-                        <div className="col-4  p-2 mt-3 text-gray text-center">
+                        <div className="col-md-4 col-12  p-2 mt-3 text-gray text-center d-flex flex-wrap">
                             <span className="px-3">Global Presence :</span>
                             <span className="px-2">USA</span>
                             <span className="px-2">India</span>
