@@ -6,7 +6,7 @@ function WeOpenSource() {
             <div className="container  p-3 mt-5 mb-5">
                 <div className="row d-flex justify-content-evenly">
                     {/* Left Div */}
-                    <div className="col-4 scrolling-image" style={{height:"350px"}}>
+                    <div className="col-md-4 col-12 scrolling-image" style={{height:"350px"}}>
                         <img
                             src="https://www.infracloud.io/assets/img/open-source-contributions/sprite-for-we-believe-in-paying-it-forward-section.svg"
                             alt="Placeholder Image"
@@ -15,7 +15,7 @@ function WeOpenSource() {
                     </div>
 
                     {/* Right Div */}
-                    <div className="col-5  d-grid align-self-center">
+                    <div className="col-md-5 col-12 d-grid align-self-center">
                         <h2 className="mb-3 fw-bold">We<span style={{ color: "orange" }}>&#x2764;</span> Open Source</h2>
                         <p className="mb-0 text-gray">
                             We believe open source enables anyone to create technologies for a better tomorrow. Our developers have been constantly contributing to cloud native projects including Kubernetes.</p>

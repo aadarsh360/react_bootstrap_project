@@ -5,6 +5,7 @@ import HorizontalMove from '../components/HorizontalMove'
 import Nitty_Gritty from '../components/Nitty_Gritty'
 import WeOpenSource from '../components/WeOpenSource'
 import RightProcessAndPeople from '../components/RightProcessAndPeople'
+import QuestionAroundCloudNativeDevelopment from '../components/QuestionAroundCloudNativeDevelopment'
 
 function CloudNativeProductDevelopment() {
     return (
@@ -13,24 +14,25 @@ function CloudNativeProductDevelopment() {
             <Navbar />
 
             <div className="" >
+                <div className="container">
+                    <div className=" row  ">
 
-                <div className="d-flex justify-content-evenly container">
+                        <div className="mt-5 col-md-5 col-12 ">
+                            <h2 className="mb-3 fw-bold">Build Better Cloud Native<br></br> Products Faster</h2>
+                            <p className="mb-4 text-gray medium-text">Our trusted cloud native product engineering services help you build cloud native products faster. </p>
+                            <button className="btn bg-orange p-2 ">Talk to Expert</button>
 
-                    <div className="mt-5 custom-dimensions ">
-                        <h2 className="mb-3 fw-bold">Build Better Cloud Native<br></br> Products Faster</h2>
-                        <p className="mb-4 text-gray medium-text">Our trusted cloud native product engineering services help you build cloud native products faster. </p>
-                        <button className="btn bg-orange p-2 ">Talk to Expert</button>
+                        </div>
+
+                        <div className="col-md-7 col-12 ">
+                            <img
+                                src="https://www.infracloud.io/assets/img/product-engineering/svg/illustration-product.svg"
+                                alt="Logo"
+                                className="img-fluid"
+                            />
+                        </div>
 
                     </div>
-
-                    <div className=" custom-dimensions2 ">
-                        <img
-                            src="https://www.infracloud.io/assets/img/product-engineering/svg/illustration-product.svg"
-                            alt="Logo"
-                            className=""
-                        />
-                    </div>
-
                 </div>
             </div>
 
@@ -51,7 +53,7 @@ function CloudNativeProductDevelopment() {
                         {/* Row 1 */}
                         <div className="row">
                             {/* Col 1 */}
-                            <div className="col  p-3">
+                            <div className="col-lg-4 col-md-6 col-12  p-3">
                                 {/* Image */}
                                 <img
                                     src="https://via.placeholder.com/40"
@@ -69,7 +71,7 @@ function CloudNativeProductDevelopment() {
                             </div>
 
                             {/* Col 2 */}
-                            <div className="col p-3">
+                            <div className="col-lg-4 col-md-6 col-12 p-3">
                                 {/* Image */}
                                 <img
                                     src="https://via.placeholder.com/40"
@@ -86,7 +88,7 @@ function CloudNativeProductDevelopment() {
                             </div>
 
                             {/* Col 3 */}
-                            <div className="col  p-3">
+                            <div className="col-lg-4 col-md-6 col-12  p-3">
                                 {/* Image */}
                                 <img
                                     src="https://via.placeholder.com/40"
@@ -107,7 +109,7 @@ function CloudNativeProductDevelopment() {
                         {/* Row 2 */}
                         <div className="row">
                             {/* Col 1 */}
-                            <div className="col p-3">
+                            <div className="col-lg-4 col-md-6 col-12 p-3">
                                 {/* Image */}
                                 <img
                                     src="https://via.placeholder.com/40"
@@ -124,7 +126,7 @@ function CloudNativeProductDevelopment() {
                             </div>
 
                             {/* Col 2 */}
-                            <div className="col p-3">
+                            <div className="col-lg-4 col-md-6 col-12 p-3">
                                 {/* Image */}
                                 <img
                                     src="https://via.placeholder.com/40"
@@ -141,7 +143,7 @@ function CloudNativeProductDevelopment() {
                             </div>
 
                             {/* Col 3 */}
-                            <div className="col  p-3">
+                            <div className="col-lg-4 col-md-6 col-12  p-3">
                                 {/* Image */}
                                 <img
                                     src="https://via.placeholder.com/40"
@@ -171,7 +173,7 @@ function CloudNativeProductDevelopment() {
                 <div className="container mt-5">
                     <div className="row mt-5 mb-5  d-flex justify-content-between">
                         {/* Left Div */}
-                        <div className="col-3  p-3">
+                        <div className="col-md-3 col-12 p-3">
                             <h2 className="fw-bold">Leverage our
                                 Golang Expertise</h2>
                             <p className="text-gray mt-4">Get business-ready applications by the best Golang developers</p>
@@ -179,10 +181,10 @@ function CloudNativeProductDevelopment() {
 
 
                         {/* Right Div */}
-                        <div className="col-7  ">
+                        <div className="col-md-7 col-12  ">
                             <div className="row g-5 ">
                                 {/* Row 1 */}
-                                <div className="col-6  p-3 ">
+                                <div className="col-md-6 col-12  p-3 ">
 
                                     <img
                                         src="https://www.infracloud.io/assets/img/product-engineering/svg/architect-icon.svg"
@@ -195,7 +197,7 @@ function CloudNativeProductDevelopment() {
                                     <p className="text-gray">Our team of Golang product development experts have developed enterprise grade cloud native solutions for 50+ satisfied clients.</p>
                                 </div>
 
-                                <div className="col-6  p-3">
+                                <div className="col-md-6 col-12  p-3">
 
                                     <img
                                         src="https://via.placeholder.com/40"
@@ -211,7 +213,7 @@ function CloudNativeProductDevelopment() {
 
                             <div className="row g-3 mt-3">
                                 {/* Row 2 */}
-                                <div className="col-6  p-3">
+                                <div className="col-md-6 col-12 p-3">
 
                                     <img
                                         src="https://via.placeholder.com/40"
@@ -224,7 +226,7 @@ function CloudNativeProductDevelopment() {
                                     <p className="text-gray">Keeping Golang applications up to date with the best practices is important. Leverage the services of our Golang experts who have maintained critical production grade applications.</p>
                                 </div>
 
-                                <div className="col-6  p-3">
+                                <div className="col-md-6 col-12 p-3">
 
                                     <img
                                         src="https://via.placeholder.com/40"
@@ -324,20 +326,20 @@ function CloudNativeProductDevelopment() {
 
             {/* ==================================================================================================== */}
 
-            <div className="border border-danger bg-light-green">
-                <div className="container border border-primary p-3">
+            <div className=" bg-light-green">
+                <div className="container  p-3">
                     {/* Left Div */}
 
-                    <div className=" border border-danger px-2 py-5 text-center">
+                    <div className=" px-2 py-5 text-center">
                         <h2 className="fw-bold">Cloud Native Product Engineering Partner You Need</h2>
 
                     </div>
 
                     {/* Right Div */}
-                    <div className="row d-flex justify-content-evenly border border-success p-2">
+                    <div className="row d-flex justify-content-evenly  p-2">
 
                         {/* First Inner Div */}
-                        <div className="col-md-3 col-12 border border-primary p-4 mb-2 text-center bg-white">
+                        <div className="col-md-3 col-12  p-4 mb-2 text-center bg-white">
                             {/* Image */}
                             <img
                                 src="https://www.infracloud.io/assets/img/product-engineering/svg/startup-icon.svg"
@@ -357,7 +359,7 @@ function CloudNativeProductDevelopment() {
 
 
                         {/* Second Inner Div */}
-                        <div className="col-md-3 col-12 border border-primary p-4 mb-2 text-center bg-white">
+                        <div className="col-md-3 col-12  p-4 mb-2 text-center bg-white">
                             {/* Image */}
                             <img
                                 src="https://www.infracloud.io/assets/img/product-engineering/svg/smes-icon.svg"
@@ -375,7 +377,7 @@ function CloudNativeProductDevelopment() {
                         </div>
 
                         {/* Third Inner Div */}
-                        <div className="col-md-3 col-12 border border-primary p-4 mb-2 text-center bg-white">
+                        <div className="col-md-3 col-12  p-4 mb-2 text-center bg-white">
                             {/* Image */}
                             <img
                                 src="https://www.infracloud.io/assets/img/product-engineering/svg/enterprises-icon.svg"
@@ -400,7 +402,7 @@ function CloudNativeProductDevelopment() {
             {/* ========================================================================================================= */}
 
 
-            <div className="border border-primary">
+            <div className="">
                 <div className=" container p-3">
                     {/* up Div */}
                     <div className=" p-5 text-center">
@@ -482,7 +484,7 @@ function CloudNativeProductDevelopment() {
                     </div>
 
                     <div className=" d-flex justify-content-center ">
-                        <div className="border p-3 py-5">
+                        <div className="border p-3 py-5 ">
 
                             <div className="bg-light-green">
                                 <h3 className="fw-bold">Backend</h3>
@@ -556,17 +558,17 @@ function CloudNativeProductDevelopment() {
                 <div className="container mt-5">
                     <div className="row mt-5 mb-5  d-flex justify-content-between">
                         {/* Left Div */}
-                        <div className="col-3  p-3">
+                        <div className="col-md-3 col-12  p-3">
                             <h2 className="fw-bold">Why Some of the Best Companies Work with InfraCloud?</h2>
                             <p className="text-gray mt-4">Get business-ready applications by the best Golang developers</p>
                         </div>
 
 
                         {/* Right Div */}
-                        <div className="col-7  ">
+                        <div className="col-md-7 col-12  ">
                             <div className="row g-5 ">
                                 {/* Row 1 */}
-                                <div className="col-6  p-3 ">
+                                <div className="col-md-6 col-12  p-3 ">
 
                                     <img
                                         src="https://www.infracloud.io/assets/img/product-engineering/svg/architect-icon.svg"
@@ -577,7 +579,7 @@ function CloudNativeProductDevelopment() {
                                     <p className="text-gray">Each project will have a dedicated technical lead, a cloud native expert, who will manage the project from start to stop. A single point of contact between you and our engineering team. They will be responsible for timely deliverables along with assisting you at every step of your cloud native journey</p>
                                 </div>
 
-                                <div className="col-6  p-3">
+                                <div className="col-md-6 col-12  p-3">
 
                                     <img
                                         src="https://via.placeholder.com/40"
@@ -592,7 +594,7 @@ function CloudNativeProductDevelopment() {
 
                             <div className="row g-3 mt-3">
                                 {/* Row 2 */}
-                                <div className="col-6  p-3">
+                                <div className="col-md-6 col-12  p-3">
 
                                     <img
                                         src="https://via.placeholder.com/40"
@@ -605,7 +607,7 @@ function CloudNativeProductDevelopment() {
                                     <p className="text-gray">We have the perfect mix of rookies & skilled professionals at InfraCloud. Architects with immense experience of implementing cloud naitve products at scale. Rookies who come up with innovative ideas, some of which have garnered praise in the open source community.</p>
                                 </div>
 
-                                <div className="col-6  p-3">
+                                <div className="col-md-6 col-12  p-3">
 
                                     <img
                                         src="https://via.placeholder.com/40"
@@ -631,32 +633,49 @@ function CloudNativeProductDevelopment() {
 
             {/*==========================================================================================================*/}
 
-            <div className="border border-danger row p-5">
+            <div className=" bg-light-green row py-5">
 
-                <div className="border border-primary bg-light-green col-lg-9 col-12">
-                    <div className="container border border-danger p-4">
-                        <h3 className="fw-bold">What do our Customers Say about us</h3>
-                        <p className="text-gray">From startups to global enterprises, our clients are our biggest advocates. Hear straight from our customers how we helped them navigate their cloud native journey.</p>
+                <div className=" col-lg-9 col-12 ">
+                    <div className=" p-5 d-flex justify-content-end">
+                        <div className="  ">
+                            <h3 className="fw-bold px-5">What do our Customers Say about us</h3>
+                            <p className="text-gray px-5 fs-5">From startups to global enterprises, our clients are our biggest advocates. Hear straight from our customers how we helped them navigate their cloud native journey.</p>
+                        </div>
                     </div>
 
-                    <div className="row border border-danger d-flex justify-content-between" >
-                        <div className="col-md-5 col-12 bg-white border border-success p-2 ">
-                            <p className="text-gray">"We engaged with InfraCloud to build a Kubernetes based platform for running insurance apps. InfraCloud’s experience and deep knowledge helped us in building this platform quickly using best practices for Kubernetes."</p>
+                    <div className="row p-4  d-flex justify-content-center" >
+                        <div className="row d-flex justify-content-around  div-static-in-small">
 
-                            <div>
+                            <div className="col-md-5 col-12 bg-white  p-2 border rounded-4">
+                                <p className="text-gray">"We engaged with InfraCloud to build a Kubernetes based platform for running insurance apps. InfraCloud’s experience and deep knowledge helped us in building this platform quickly using best practices for Kubernetes."</p>
 
+                                <div className="d-flex py-4">
+                                    <img
+                                        src="https://picsum.photos/50"
+                                        alt="Logo"
+                                        className="img-fluid rounded-2"
+                                    />
+                                    <div className="m-2">
+                                        <h6>Squid Game</h6>
+                                        <p className="text-gray small-text">Head of Platforms</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-md-5 col-12 bg-white border border-warning p-2 ">
-                            <p className="text-gray">"InfraCloud has been of tremendous value to the core development work we have been doing. Their engineers are thorough professional, very knowledgeable, and have adapted to the demands of the work quite well. They are always proactive and helpful to the other team members as well. A great asset for any team!"</p>
+                            <div className="col-md-5 col-12 bg-white  p-2 border rounded-4">
+                                <p className="text-gray">"InfraCloud has been of tremendous value to the core development work we have been doing. Their engineers are thorough professional, very knowledgeable, and have adapted to the demands of the work quite well. They are always proactive and helpful to the other team members as well. A great asset for any team!"</p>
 
-                            <div>
-
+                                <div>
+                                    <h6 className="p-0">VP, Engineering & Head, India Product Operations</h6>
+                                    <p className="text-gray small-text">Computer and Network Security</p>
+                                </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
-                <div className="border border-success bg-dark-blue  col-lg-3 col-0"></div>
+
+                <div className=" bg-dark-blue  col-lg-3 col-0"></div>
             </div>
 
 
@@ -673,7 +692,7 @@ function CloudNativeProductDevelopment() {
                     <div className="row  p-3 d-flex justify-content-evenly mt-5 ">
 
                         {/* Child Div 1 */}
-                        <div className=" col-3 hover-effect hover-shadow">
+                        <div className=" col-md-3 col-12 hover-effect hover-shadow">
                             {/* Image */}
                             <div >
                                 <img
@@ -696,7 +715,7 @@ function CloudNativeProductDevelopment() {
                         </div>
 
                         {/* Child Div 2 */}
-                        <div className=" col-3 hover-effect hover-shadow">
+                        <div className=" col-md-3 col-12 hover-effect hover-shadow">
                             {/* Image */}
                             <div >
                                 <img
@@ -719,7 +738,7 @@ function CloudNativeProductDevelopment() {
                         </div>
 
                         {/* Child Div 3 */}
-                        <div className=" col-3 hover-effect hover-shadow">
+                        <div className=" col-md-3 col-12 hover-effect hover-shadow">
                             {/* Image */}
                             <div >
                                 <img
@@ -746,7 +765,7 @@ function CloudNativeProductDevelopment() {
                 </div>
             </div>
 
-
+            {/* =================================================================================================================== */}
 
             {/* above footer */}
             <div className="bg-dark-blue">
@@ -759,7 +778,7 @@ function CloudNativeProductDevelopment() {
                     </div>
 
 
-                    <div className="p-3 d-flex justify-content-around">
+                    <div className="p-3 d-flex flex-wrap justify-content-around">
                         {/* First Inner Div */}
                         <div className=" p-2 mb-3 text-center">
                             {/* Paragraph */}
@@ -791,6 +810,22 @@ function CloudNativeProductDevelopment() {
                 </div>
 
             </div>
+            {/* ==================================================================================================== */}
+
+
+            <div className=" mb-5 p-5 top-to-bottom-color">
+                <div className=" container">
+                    <div className="text-center p-4">
+                        <h3 className="fw-bold">Got a question around Cloud Native Product Development Consulting?</h3>
+                    </div>
+
+                    <div className="text-center ">
+                        <QuestionAroundCloudNativeDevelopment />
+                    </div>
+                </div>
+            </div>
+
+            {/* ========================================================================================================= */}
 
 
             <Footer />

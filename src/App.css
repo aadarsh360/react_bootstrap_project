@@ -140,6 +140,13 @@
    /* Text color */
 }
 
+@media screen and (min-width: 993px) {
+ 
+  .div-static-in-small{
+    position:relative;
+    left: 200px
+  }
+}
 
 
 

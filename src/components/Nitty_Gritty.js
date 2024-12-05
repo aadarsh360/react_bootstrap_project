@@ -6,7 +6,7 @@ function Nitty_Gritty() {
         <div className="container  ">
             <div className="row mt-5 mb-5  d-flex justify-content-around">
                 {/* Left Div */}
-                <div className="col-3  p-3">
+                <div className="col-md-3 col-12  p-3">
                     <h2 className="fw-bold">We Understand the
                         Nitty-Gritty!</h2>
                     <p className="text-gray mt-4">Gain leverage with our proven artificial intelligence expertise & industry exposure. Working with 100+ clients, we know the criticalities, compliances & the importance of getting things right in the first go.
@@ -15,10 +15,10 @@ function Nitty_Gritty() {
 
 
                 {/* Right Div */}
-                <div className="col-8  ">
+                <div className="col-md-8 col-12 ">
                     <div className="row g-3">
                         {/* Row 1 */}
-                        <div className="col-6  p-3 ">
+                        <div className="col-md-6 col-12  p-3 ">
                             <div className="d-flex ">
                             <img
                                 src="https://via.placeholder.com/40"
@@ -31,7 +31,7 @@ function Nitty_Gritty() {
                             <p>Customers demand highly available & compliant systems to efficiently handle transactions & payment requests 24/7. →</p>
                         </div>
 
-                        <div className="col-6  p-3">
+                        <div className="col-md-6 col-12  p-3">
                         <div className="d-flex ">
                             <img
                                 src="https://via.placeholder.com/40"
@@ -47,7 +47,7 @@ function Nitty_Gritty() {
 
                     <div className="row g-3 mt-3">
                         {/* Row 2 */}
-                        <div className="col-6  p-3">
+                        <div className="col-md-6 col-12  p-3">
                             <div className="d-flex ">
                             <img
                                 src="https://via.placeholder.com/40"
@@ -60,7 +60,7 @@ function Nitty_Gritty() {
                             <p>Keep up with the AI & machine learning with the rising customer expectations and integrate more technologies while reaching heights of a safer and sustainable future. →</p>
                         </div>
 
-                        <div className="col-6  p-3">
+                        <div className="col-md-6 col-12  p-3">
                         <div className="d-flex ">
                             <img
                                 src="https://via.placeholder.com/40"
@@ -76,7 +76,7 @@ function Nitty_Gritty() {
 
                     <div className="row g-3 mt-3">
                         {/* Row 3 */}
-                        <div className="col-6  p-3">
+                        <div className="col-md-6 col-12  p-3">
                             <div className="d-flex ">
                             <img
                                 src="https://via.placeholder.com/40"
@@ -89,7 +89,7 @@ function Nitty_Gritty() {
                             <p>Leverage the power of cloud GPU instances to process patient data at speed to adapt to the rapidly evolving healthcare demands.</p>
                         </div>
 
-                        <div className="col-6  p-3">
+                        <div className="col-md-6 col-12  p-3">
                         <div className="d-flex ">
                             <img
                                 src="https://via.placeholder.com/40"
